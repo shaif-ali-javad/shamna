@@ -101,24 +101,142 @@
 }
 
 
+
 .explaination {
     max-width: 100%;
+    display: flex;
+    margin: 10rem 0;
 }
 
-.explaination .image .border {
-    position: relative;
-    width: 400px;
+.explaination .image {
+    height: 100%;
+    width: 100%;
+}
+
+.explaination .image img {
+    height: 25em;
+    width: 28em;
+}
+
+.explaination .image {
+    height: 31rem;
 }
   
-.explaination .image .border::before {
+.explaination .image0 .border0 {
     content: '';
-    position: absolute;
-    top: -400px;
-    left: -50px;
-    right: 0px;
-    bottom: -50px;
+    width: 26.5rem;
+    height: 23rem;
     border: 10px solid rgba(0, 0, 0, 0.073);
     z-index: -1;
+    transform: translate(-10%, -90%);
+}
+  
+.explaination .image1 .border0 {
+    content: '';
+    width: 26.5rem;
+    height: 23rem;
+    border: 10px solid rgba(0, 0, 0, 0.073);
+    z-index: -1;
+    transform: translate(15%, -90%);
+}
+
+@media screen and (max-width: 991px) { 
+
+    .explaination .image1 {
+        margin: 10rem 0 2rem;
+    }
+    
+    .explaination .image .border0 {
+        width: 26.5rem;
+        height: 23rem;
+        transform: translate(15%, -90%);
+    }    
+    
+    .explaination .content0 {
+        padding-right: 0;
+    }
+    
+    .explaination .content1 {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    
+    .explaination .image {
+        height: 27rem;
+    }
+
+    .explaination .image img {
+        height: 20em;
+        width: 23em;
+    }
+    
+    .explaination .image .border0 {
+        width: 22rem;
+        height: 19rem;
+        transform: translate(15%, -88%);
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    
+        .explaination .image {
+            height: 21rem;
+        }
+
+    .explaination .image img {
+        height: 17em;
+        width: 20em;
+
+    }
+    
+    .explaination .image .border0 {
+        width: 19.3rem;
+        height: 16rem;
+        transform: translate(15%, -88%);
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+    
+    .explaination .image {
+        height: 21rem;
+    }
+
+    .explaination .image img {
+        height: 15em;
+        width: 18em;
+
+    }
+
+    .explaination .image .border0 {
+        width: 17.3rem;
+        height: 14rem;
+        transform: translate(15%, -88%);
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    
+    .explaination .image {
+        height: 21rem;
+    }
+
+    .explaination .image img {
+        height: 13em;
+        width: 15em;
+    }
+
+    .explaination .image .border0 {
+        width: 14.5rem;
+        height: 12rem;
+        transform: translate(15%, -88%);
+    }
+
 }
 
 .explaination.row {
@@ -131,27 +249,43 @@
     padding-right: 0;
 }
 
+.explaination .content0 {
+    padding-right: 2.5rem;
+}
+
+.explaination .content1 {
+    padding-left: 4.5rem;
+}
+
 .explaination .content .p0 {
     font-size: 35px;
+    position: relative;
+    padding-bottom: 1rem;
 }
 
-.explaination .content .border-bottom {
-  content: "";
-  position: absolute;
-  top: 6.5rem;
-  width: 10%;
-  height: 0.5rem;
-  background-color: #343434;
-  transition: width 2000ms ease-in-out, background-color 500ms ease-in-out;
-}
+.explaination h2::before {
+    content: ''; /* Specify content to make ::before work */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    padding-top: 2rem;
+    border-bottom: .5rem solid #149ddd; /* Specify border properties (style, width, and color) */
+    width: 5rem;
+    transition: width 2000ms ease-in-out, border-bottom 500ms ease-in-out;
+} 
 
-.explaination:hover .content .border-bottom {
+.explaination:hover h2::before {
   width: 100%;
-  background-color: aqua;
-  transition: width 1000ms ease-in-out, background-color 500ms ease-in-out;
+  transition: width 1000ms ease-in-out, border-bottom 500ms ease-in-out;
 }
 
-  
+.explaination:hover h2::before {
+    width: 100%;
+    transition: width 1000ms ease-in-out, border-bottom 500ms ease-in-out;
+}
+
 .explaination .content .p1 {
     font-size: 18px;
 }
@@ -162,10 +296,6 @@
 
 .explaination .col-12 .p-0 {
     padding: 0;
-}
-
-.row-3-last {
-    margin-bottom: 20rem;
 }
   
 

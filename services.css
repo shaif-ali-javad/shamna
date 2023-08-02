@@ -11,11 +11,6 @@
     font-family: 'Unbounded', cursive; */
 }
 
-body {
-    background-color: #086986;
-    color: #ffffff;
-}
-
 .header {
     background-color: #3434344a;
     transition: 500ms;
@@ -24,6 +19,7 @@ body {
 
 .header.sticky {
     background-color: #343434;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 2px 50px 0 rgba(0, 0, 0, 0.1);
 }
 
 .header h2 {
@@ -117,6 +113,12 @@ body {
     text-align: center;
 }
 
+@media screen and (max-width: 760px) { 
+    .image0 h1 {
+        font-size: 4.5rem;
+    }   
+}
+
 .image0 .p{
     transform: translateY(50%);
 }
@@ -124,63 +126,67 @@ body {
 
 
 .heading h1 {
-    margin: 10rem 0 2rem;
+    padding: 10rem 0 2rem;
 }
 
 
-.container {
-    
-}
 
-.container .row .card {
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  .container {
+    max-width: 100%;
+    padding-right: 15px; /* Add some padding to create space between container and screen edges */
+    padding-left: 15px; /* Add some padding to create space between container and screen edges */
+  }
+  
+  /* Add a media query to adjust the container width for smaller screens */
+  @media screen and (max-width: 768px) {
+    .container {
+      padding-right: 15px; /* Adjust padding for smaller screens */
+      padding-left: 15px; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  .container .row .card {
     background-color: #020202;
     color: #ffffff;
     border-radius: 1rem;
     height: 20rem;
-}
-
-.container .row .card .card-body {
+  }
+  
+  .container .row .card .card-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
-}
-
-.container .row .card .card-body .card-title {
+  }
+  
+  .container .row .card .card-body .card-title {
     color: #ffdd00;
     font-family: 'Roboto';
-}
-
-.container .row .col-md-12 .card .card-body .card-title {
+  }
+  
+  .container .row .col-md-12 .card .card-body .card-title {
     font-size: 4rem;
-}
-
-.container .row .card .card-body .btn {
+  }
+  
+  @media screen and (max-width: 760px) {
+    .container .row .col-md-12 .card .card-body .card-title {
+      font-size: 3rem;
+    }
+  }
+  
+  .container .row .card .card-body .btn {
     color: #ffffff;
     background-color: #313131;
     border: none;
     border-radius: 10rem;
-}
-
-.container .row .card .card-body .btn:active {
+  }
+  
+  .container .row .card .card-body .btn:active {
     background-color: #3e3c02;
-}
-
-
-
-#image-track > .image {
-    height: 40vmin;
-    width: 56vmin;
-    object-fit: cover;
-    object-position: center center;
-}
-
-#image-track {
-    display: flex;
-    gap: 4vmin;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(0%, -50%);
-}
+  }
+  
