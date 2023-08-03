@@ -279,10 +279,6 @@
     font-family: 'Roboto';
 }
 
-.container .row .col-md-12 .card .card-body .card-title {
-    font-size: 4rem;
-}
-
 .container .row .card .card-body .btn {
     color: #fff;
     background-color: #04536b;

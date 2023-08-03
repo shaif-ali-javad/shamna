@@ -87,7 +87,7 @@
     align-items: center;
     justify-content: center;
     background-size: cover;
-    background-image: url(https://img.freepik.com/premium-photo/abstract-city-building-skyline-metropolitan-area-contemporary-color-style-futuristic-effects-real-estate-property-development-innovative-architecture-engineering-concept_31965-26878.jpg?w=996);
+    background-image: url(https://img.freepik.com/fotos-premium/uma-paisagem-urbana-com-um-ceu-azul-e-um-predio-com-a-palavra-financeiro_826801-3506.jpg?w=826);
 }
 
 .image0 .p::before {
@@ -98,7 +98,7 @@
     width: 100%;
     height: 100%;
     background-size: cover;
-    background-image: url(https://img.freepik.com/premium-photo/abstract-city-building-skyline-metropolitan-area-contemporary-color-style-futuristic-effects-real-estate-property-development-innovative-architecture-engineering-concept_31965-26878.jpg?w=996);
+    background-image: url(https://img.freepik.com/fotos-premium/uma-paisagem-urbana-com-um-ceu-azul-e-um-predio-com-a-palavra-financeiro_826801-3506.jpg?w=826);
     opacity: 0.2; /* Adjust opacity if needed */
     z-index: -1; /* Move the pseudo-element behind the content */
 }
@@ -106,11 +106,12 @@
 .image0 .p {
     position: relative; /* Add position relative to make ::before position properly */
     z-index: 1; /* Bring the content above the pseudo-element */
-    transform: translateY(50%);
+    transform: translateY(90%);
 }
 
 .image0 h1 {
     text-align: center;
+    color: #fff;
 }
 
 @media screen and (max-width: 760px) { 
@@ -120,7 +121,7 @@
 }
 
 .image0 .p{
-    transform: translateY(50%);
+    transform: translateY(30%);
 }
 
 
