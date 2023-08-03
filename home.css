@@ -270,6 +270,10 @@
     height: 100%;
 }
 
+.container .row .card .card-body .card-img-top {
+    position: absolute;
+}
+
 .container .row .card .card-body .card-title {
     color: #04536b;
     font-family: 'Roboto';
