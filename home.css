@@ -102,26 +102,23 @@
 }
 
 
-
-/* Make the image fully responsive */
-.carousel-inner {
-    max-height: 27rem;
+/* Default styles for carousel images */
+.carousel-inner img {
+    height: 30rem; /* Default height for larger screens */
 }
 
-@media screen and (max-width: 615px) {
+/* Media query for smaller screens */
+@media screen and (max-width: 815px) {
     .carousel-inner {
-        /* height: 20rem; */
-    }   
+        max-height: 27rem;
+        overflow: hidden;
+    }
 
     .carousel-inner img {
-        height: 755;
+        height: 100%; /* Adjust image height for smaller screens */
     }
-    
 }
 
-.carousel-inner img {
-    height: 32rem;
-}
 
 
 
