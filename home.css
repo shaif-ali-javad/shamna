@@ -112,7 +112,18 @@
     .carousel-inner {
         /* height: 20rem; */
     }   
+
+    .carousel-inner img {
+        height: 755;
+    }
+    
 }
+
+.carousel-inner img {
+    height: 32rem;
+}
+
+
 
 
 
