@@ -1136,6 +1136,26 @@ section {
   }
 }
 
+
+
+.contact1 .location1{
+  margin-top: .5rem;
+}
+
+.contact1 .email1{
+  margin-top: .3rem;
+}
+
+.contact1 .number1{
+  margin-top: .3rem;
+}
+
+
+
+.copyright1 {
+  font-size: .9rem;
+}
+
 /* up icon  */
 
 #myBtn {
