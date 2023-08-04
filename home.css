@@ -105,7 +105,7 @@
 
 /* Make the image fully responsive */
 .carousel-inner {
-    max-height: 20rem;
+    max-height: 12rem;
 }
 
 @media screen and (max-width: 615px) {
