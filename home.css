@@ -163,7 +163,7 @@
     }
 
     .carousel-inner img {
-        height: 100%; /* Adjust image height for smaller screens */
+        height: 16rem; /* Adjust image height for smaller screens */
     }
 }
 
