@@ -20,14 +20,45 @@
 }
 
 .header.sticky {
-    background-color: #343434;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 2px 50px 0 rgba(0, 0, 0, 0.1);
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 7px 20px 0 rgba(0, 0, 0, 0.1);
+   background-color: #ffffff;
 }
 
-.header h2 {
-    color: #fff;
-    font-family: 'Unbounded';
+.header .logo {
+    display: flex;
+    align-items: center;
 }
+
+.header .logo img {
+    height: 4.3rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, margin 0.3s ease-in-out; /* Added margin transition */
+    margin-left: 0; /* Initially no margin */
+}
+
+.header.sticky .logo .img2 {
+    opacity: 1;
+    margin-left: 0rem; /* Adjust margin to create visual order change */
+}
+
+.header .logo .img3 {
+    opacity: 1;
+    margin-left: -6rem; /* Adjust margin to create visual order change */
+}
+
+.header.sticky .logo .img3 {
+    opacity: 0;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
 
 .header .navbar button{
     outline:none ;
@@ -63,7 +94,11 @@
 }
 
 .header.sticky .navbar-nav .active {
-    background-color: rgb(0, 0, 0);
+    background-color: #04536b;
+}
+
+.header.sticky .navbar-nav .active a{
+    color: #fff;
 }
 
 .header .navbar-nav li:hover {
@@ -72,12 +107,23 @@
 }
 
 .header.sticky .navbar-nav li:hover {
-    background-color: rgb(0, 0, 0);
+    background-color: #04536b;
     border-radius: 3rem;
+    transition: background-color 0.3s ease-in-out; /* Added transition for background-color */
 }
 
 .header .navbar-nav li a {
     color: #fff;
+    transition: color 0.3s ease-in-out; /* Added transition for color */
+}
+
+.header.sticky .navbar-nav li a {
+    transition: color 0.1s ease-in-out; /* Added transition for color */
+    color: #000000;
+}
+.header.sticky .navbar-nav li:hover a {
+    color: #fff;
+    transition: color 0.3s ease-in-out;
 }
 
 
